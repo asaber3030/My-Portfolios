@@ -1,0 +1,51 @@
+@import '../../assets/css/global.scss';
+
+.page {
+  width: 100%;
+  height: 100%;
+
+}
+.top-tags {
+  bottom: auto;
+  top: 35px;
+}
+.tags {
+  color: $primary-color;
+  opacity: 0.6;
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+  font-size: 16px;
+  font-family: $code-font !important;
+}
+.bottom-tag-html {
+  position: absolute;
+  bottom: 0;
+  margin-left: -100px;
+}
+.top-tag-html {
+  font-family: $code-font !important;
+  top: 0;
+  color: $primary-color;
+  opacity: 0.6;
+  position: absolute;
+}
+
+.container {
+  will-change: contents;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  padding: 50px;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+
+.AppLayout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

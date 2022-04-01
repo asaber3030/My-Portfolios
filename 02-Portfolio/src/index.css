@@ -1,0 +1,11 @@
+body {
+  color: #444;
+  background: #282727;
+  overflow: hidden;
+  display: block;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,0 +1,246 @@
+@import '../../assets/css/global';
+
+.skills-page {
+  display: flex !important;
+  align-items: center;
+  .text-zone {
+    vertical-align: middle;
+    width: 47%;
+    margin-right: 80px;
+    h1 {
+      font-size: 80px;
+      font-weight: 900;
+      position: relative;
+      color: $primary-color;
+      letter-spacing: 8px;
+      &:before {
+        content: "<h1>";
+        position: absolute;
+        font-weight: 100 !important;
+        font-family: $code-font;
+        font-size: 20px;
+        margin-top: -10px;
+        opacity: .6;
+        top: -10px;
+        left: -18px;
+        line-height: 18px;
+      }
+      &:after {
+        content: "</h1>";
+        position: absolute;
+        font-weight: 100 !important;
+        font-family: $code-font;
+        font-size: 20px;
+        margin-bottom: -10px;
+        opacity: .6;
+        bottom: -10px;
+        left: -18px;
+        line-height: 18px;
+      }
+    }
+    p {
+      color: #FFF;
+      line-height: 1.8;
+      margin-top: 30px;
+    }
+    .text-animate-hover {
+      &:hover { color: #fff; }
+    }
+    form {
+      width: 100%;
+      margin-top: 20px;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        .d-flex { display: flex; justify-content: space-between; li { width: 49%; } }
+        li {
+          padding: 0;
+          margin: 0 0 15px 0;
+          overflow: hidden;
+          display: block;
+          position: relative;
+          opacity: 0;
+          animation: fadeInUp 1.5s 1.5s;
+          animation-fill-mode: forwards;
+          clear: both;
+          input[type='text'],
+          input[type='email'], textarea {
+            width: 100%;
+            resize: none;
+            padding: 10px;
+            overflow: hidden;
+            border-color: transparent;
+            border-radius: 5px !important;
+            background-color: #ff9f432e;
+            &:focus { outline: none; border-color: $primary-color }
+
+          }
+          ::-webkit-input-placeholder { color: #999; }
+          textarea {
+            height: 150px;
+          }
+          .flat-button {
+            background-color: transparent;
+            border: none;
+            color: $primary-color;
+            padding: 10px 25px;
+            text-transform: uppercase;
+            border: 1px solid $primary-color;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            &:hover { color: #fff; background-color: $primary-color }
+          }
+        }
+        .half {
+          clear: none;
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+  .skills-zone {
+    width: 50%;
+    opacity: 0;
+    animation: backInRight 1s 2s forwards;
+    > h3 {
+      font-size: 50px;
+      color: #ccc;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .skills {
+      width: 100%;
+      margin-top: 30px;
+      .skill {
+        margin-bottom: 40px;
+        .progress {
+          position: relative;
+          h4 {
+            font-weight: 400;
+            font-size: 18px;
+            color: #ccc;
+            margin: 6px 0;
+            font-family: $code-font;
+
+            span { float: right; color: #ff9f43; font-weight: bold; font-family: $code-font; }
+            svg { margin-right: 10px }
+          }
+          .container-pro {
+            position: relative;
+            width: 100%;
+            background-color: #444;
+            padding: 5px;
+            border-radius: 2px;
+            overflow: hidden;
+            .limit {
+              position: absolute;
+              padding: 5px;
+              width: 10%;
+              border-radius: 1px;
+              background-color: red;
+              left: 0;
+              top: 0;
+            }
+            .l-1 {
+              animation: fillBar1 1.5s 3s forwards;
+              background-color: #cdbd00;
+            }
+            .l-2 {
+              animation: fillBar2 1.6s 3.1s forwards;
+              background-color: #ababab;
+            }
+            .l-3 {
+              animation: fillBar3 1.37s 3.2s forwards;
+              background-color: #1261a5;
+            }
+            .l-4 {
+              animation: fillBar4 1.4s 3.3s forwards;
+              background-color: $primary-color;
+            }
+            .l-5 {
+              animation: fillBar5 1.3s 3.4s forwards;
+              background-color: #722f2f;
+            }
+            .l-6 {
+              animation: fillBar6 1.4s 3.5s forwards;
+              background-color: #0a9f8a;
+            }
+            .l-7 {
+              animation: fillBar7 1.2s 3.6s forwards;
+              background-color: #119765;
+            }
+            .l-8 {
+              animation: fillBar8 1.19s 3.8s forwards;
+              background-color: #ffa600;
+            }
+            .l-9 {
+              animation: fillBar9 1.5s 3.9s forwards;
+              background-color: #042a34;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fillBar1 {
+  from {
+    width: 10%;
+  }
+  to { width: 87% }
+}
+@keyframes fillBar2 {
+  from {
+    width: 10%;
+  }
+  to { width: 79% }
+}
+@keyframes fillBar3 {
+  from {
+    width: 10%;
+  }
+  to { width: 87% }
+}
+@keyframes fillBar4 {
+  from {
+    width: 10%;
+  }
+  to { width: 75% }
+}
+@keyframes fillBar5 {
+  from {
+    width: 10%;
+  }
+  to { width: 60% }
+}
+@keyframes fillBar6 {
+  from {
+    width: 10%;
+  }
+  to { width: 54% }
+}
+@keyframes fillBar7 {
+  from {
+    width: 10%;
+  }
+  to { width: 64% }
+}
+@keyframes fillBar8 {
+  from {
+    width: 10%;
+  }
+  to { width: 60% }
+}
+@keyframes fillBar9 {
+  from {
+    width: 10%;
+  }
+  to { width: 40% }
+}
