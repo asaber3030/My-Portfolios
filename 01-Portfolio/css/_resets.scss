@@ -1,0 +1,84 @@
+@import "vars";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+}
+body {
+  background-color: #1e1e1e;
+  position: relative;
+  margin-bottom: 5px;
+}
+::-webkit-scrollbar {
+  width: 3px;
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #222;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+%transition {
+  transition: 0.25s ease-in-out;
+}
+
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 45px;
+}
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 32px;
+}
+h5 {
+  font-size: 25px;
+}
+h6 {
+  font-size: 20px;
+}
+html,
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+
+.btn {
+  padding: 10px 40px;
+  cursor: pointer;
+  font-size: 17px;
+  margin-top: 15px;
+  color: #fff;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  @extend %transition;
+  &:hover {
+    border-color: $darkBlue;
+    background-color: $darkBlue;
+  }
+}
+
+.mobile-nav {
+  display: none;
+}

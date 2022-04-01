@@ -1,0 +1,45 @@
+$stylishFont: "Nunito", sans-serif;
+
+// colors
+$lightRiver: #636e72;
+$darkRiver: #2d3436;
+
+$lightBlue: #74b9ff;
+$darkBlue: #0984e3;
+
+// Main Vars
+$headingColor: #b2bec3;
+$mainColor: #0984e3;
+
+.badge {
+  padding: 1px 8px;
+  font-size: 10px;
+  background-color: $mainColor;
+  border-radius: 2px;
+}
+.badge.badge-red { background-color: red; }
+.badge.badge-teal { background-color: teal; }
+.badge.badge-green { background-color: green; }
+
+@keyframes scaleIn {
+  from { transform: scale(0) translate(-50%, -50%); }
+  to { transform: scale(1) translate(-50%, -50%); }
+}
+
+@keyframes scaleOut {
+  from { transform: scale(1) translate(-50%, -50%); }
+  to { transform: scale(0) translate(-50%, -50%); }
+}
+
+.scaleIn { animation: scaleIn .5s forwards; }
+.scaleOut { animation: scaleOut .5s forwards; }
+
+#body-cv {
+  background-color: #fff !important;
+  #left-navigation {
+    margin-right: 0 !important;
+  }
+  .content {
+    width: 85%;
+  }
+}
